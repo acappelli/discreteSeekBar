@@ -15,6 +15,7 @@
  */
 
 apply plugin: 'com.android.library'
+apply plugin: 'bintray-release'
 
 android {
     compileSdkVersion 21
@@ -26,6 +27,15 @@ android {
         versionCode 1
         versionName "1.0"
     }
+}
+
+publish {
+    userOrg = 'acappelli'
+    groupId = 'com.acappelli'
+    artifactId = 'discreteSeekBar'
+    version = '1.0'
+    description = 'DiscreteSeekbar is my poor attempt to develop an android implementation of the Discrete Slider component from the Google Material Design Guidelines.'
+    website = 'https://github.com/acappelli/discreteSeekBar'
 }
 
 dependencies {
